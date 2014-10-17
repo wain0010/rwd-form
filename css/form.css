@@ -1,0 +1,67 @@
+
+/*******************************************
+				Defaults
+
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+	padding:0;
+	margin: 0;
+}
+html,body{
+
+}
+h1{
+
+}
+h2{
+
+}
+p{
+
+}
+
+/*******************************************
+				Layout
+*******************************************/
+.wrapper{
+	
+}
+.masthead{
+	
+}
+.main{
+	
+}
+.foot{
+	
+}
+
+/*******************************************
+				Form Styles
+*******************************************/
+.formBox{
+	
+}
+.buttons{
+	
+}
+label{
+	
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+	
+}
+input[type=submit],
+input[type=reset]{
+	
+}
+
+
+/*******************************************
+				Image Styles
+*******************************************/
+
