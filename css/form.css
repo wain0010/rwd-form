@@ -1,30 +1,49 @@
+/* CSS Document */
 
-/*******************************************
-				Defaults
+/****************************************
+                Defaults
+****************************************/
 
-Remember to use something like type-scale.com 
-to get your font sizes
-*******************************************/
 *{
 	padding:0;
 	margin: 0;
 }
 html,body{
-
+    background-color: #5859B2;
 }
 h1{
-
+    margin: 10px 10px 10px 135px;
+    font-family: 'Lobster', cursive;
+    color: white;
 }
 h2{
-
+    margin: 10px 10px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 p{
-
+    margin: 10px 10px 10px 10px;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
 }
+
+/******************************************
+            Fonts & Colour Scheme
+******************************************/
+
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+#5859B2
+#BEE6B1
+#FFB38D
+#9798FF
 
 /*******************************************
 				Layout
 *******************************************/
+
 .wrapper{
 	
 }
@@ -32,7 +51,13 @@ p{
 	
 }
 .main{
-	
+    display: block;
+    align-content: center;
+    width: 450px;
+    height: 500px;
+    background-color: #9798FF;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 .foot{
 	
@@ -41,6 +66,7 @@ p{
 /*******************************************
 				Form Styles
 *******************************************/
+
 .formBox{
 	
 }
@@ -48,19 +74,57 @@ p{
 	
 }
 label{
-	
+    margin: 15px 15px 15px 15px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
 }
 input[type=text],
 input[type=number],
 input[type=date]{
-	
+	width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 1px;
+    font-size: 10pt;
 }
-input[type=submit],
+input[type=text]{
+    border: 2px solid #FFB38D;
+}
+input[type=date]{
+    border: 2px solid #BEE6B1;
+}
+input[type=number]{
+    border: 2px solid #BEE6B1;
+}
+input[type=submit]{
+    border: 3px solid white;
+    color: #BEE6B1;
+}
 input[type=reset]{
-	
+    border: 3px solid white;
+    color: #FFB38D;
 }
-
-
+#btnSubmit{
+    margin: 15px 15px 15px 35px;
+    background-color: #5859B2;
+    width: 150px;
+    height: 50px;
+    text-decoration: underline;
+    font-size: 14pt;
+    border-radius: 15px;
+}
+#btnReset{
+    margin: 15px 15px 15px 50px;
+    background-color: #5859B2;
+    width: 150px;
+    height: 50px;
+    text-decoration: underline;
+    font-size: 14pt;
+    border-radius: 15px;
+}
+.foot{
+    padding: 25px 50px 50px 140px;
+    
 /*******************************************
 				Image Styles
 *******************************************/
