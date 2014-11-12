@@ -1,3 +1,5 @@
+<!-- HTML Document -->
+
 <!doctype html>
 <html>   
 <head>
@@ -9,11 +11,11 @@
 <body>
 	<div class="wrapper">
 		<header class="masthead">
-			<h1>Hotel-O-City</h1>
+			<h1>Hotel-O-City&trade;</h1>
 		</header>
 		<section class="main">
 			<h2>Find the right room, for the right price!</h2>
-			<p>Fill in your information below and let us make your trip complete.</p>
+			<p>Fill in your information below and help us make your trip complete. Click "Submit" when you finish, or "Reset" to start over!</p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
 				<div class="formBox">
 					<label for="departure"></label>
@@ -52,8 +54,9 @@
 					-->
 				</div>
 				<div class="col">
-					<label for="price" title=""Max. price per person>Max. Price</label>
-					<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>
+					<label class="maxPrice" for="price" title=""Max. price per person>Max. Price ($):</label>
+                    <output name="amount" id="slider" for="price">1000</output>
+					<input type="range" name="price" id="price" min="100" max="2000" value="1000" oninput="amount.value=price.value" step="50"/>
 				</div>
 				
 				<div class="col buttons">

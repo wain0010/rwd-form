@@ -1,20 +1,22 @@
 /* CSS Document */
 
 /****************************************
-                Defaults
+             -- Defaults --
 ****************************************/
 
 *{
 	padding:0;
-	margin: 0;
+	margin: 0 auto;
 }
 html,body{
     background-color: #5859B2;
 }
 h1{
-    margin: 10px 10px 10px 135px;
+    margin: 15px 5px 5px 5px;
     font-family: 'Lobster', cursive;
     color: white;
+    text-align: center;
+    text-decoration: underline;
 }
 h2{
     margin: 10px 10px 10px 10px;
@@ -28,7 +30,7 @@ p{
 }
 
 /******************************************
-            Fonts & Colour Scheme
+        -- Fonts & Colour Scheme --
 ******************************************/
 
 font-family: 'Lobster', cursive;
@@ -41,17 +43,19 @@ font-family: 'Varela Round', sans-serif;
 #9798FF
 
 /*******************************************
-				Layout
+                -- Layout --
 *******************************************/
 
 .wrapper{
-	
+	margin-right: 200px;
+    margin-left: 200px;
 }
 .masthead{
 	
 }
 .main{
     display: block;
+    margin: 0 auto;
     align-content: center;
     width: 450px;
     height: 500px;
@@ -64,7 +68,7 @@ font-family: 'Varela Round', sans-serif;
 }
 
 /*******************************************
-				Form Styles
+            -- Form Styles --
 *******************************************/
 
 .formBox{
@@ -78,6 +82,16 @@ label{
     color: white;
     font-family: 'Varela Round', sans-serif;
 }
+label.maxPrice {
+    margin-left: 30px;
+
+}
+#slider {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin-right: 20px;
+    padding-top: 10px;
+}
 input[type=text],
 input[type=number],
 input[type=date]{
@@ -89,12 +103,16 @@ input[type=date]{
 }
 input[type=text]{
     border: 2px solid #FFB38D;
+    color: grey;
 }
 input[type=date]{
     border: 2px solid #BEE6B1;
+    color: grey;
 }
 input[type=number]{
     border: 2px solid #BEE6B1;
+    color: grey;
+    
 }
 input[type=submit]{
     border: 3px solid white;
@@ -123,9 +141,100 @@ input[type=reset]{
     border-radius: 15px;
 }
 .foot{
-    padding: 25px 50px 50px 140px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin-top: 1px;
+    background-color: #9798FF;
+    border: 5px solid white;
+}
+
+/******************************************
+            -- Media Queries -- 
+******************************************/
+
+@media all and (min-width: 500px){
+    
+    .formBox, .col{
+        float:left;
+        width:48%;
+        margin: 1%;
+    }
+    
+    .buttons{
+        width:98%;  
+        margin: 1%;
+    }
+    
+     h1{
+     font-size: 4em;   
+    }
+    
+}
+
+@media all and (min-width: 780px){
+    
+    .formBox{
+        
+        float:left;
+        width:23%;
+        margin: 1%;
+    }
+
+    .main
+    {
+     width: 95%;   
+    }
+    .buttons{
+        width:50%;  
+        margin-left: 25.5%; 
+        
+    }
+    
+    input{
+     font-size:0.7rem;   
+    }
+    h1{
+     font-size: 4em;   
+    }
+}
     
 /*******************************************
-				Image Styles
+            -- Image Styles --
 *******************************************/
+
+#departure {
+    background-image: url(../img/city8.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 1.75rem;
+    
+}
+
+#destination {
+    background-image: url(../img/city8.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 1.75rem;
+}
+
+#departure_dt {
+    background-image: url(../img/calendar70.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 1rem;
+}
+
+#return_dt {
+    background-image: url(../img/calendar70.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 1rem;
+}
+
+#num_adults {
+    background-image: url(../img/multiple25.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    text-indent: 1.75rem;
+}
 
